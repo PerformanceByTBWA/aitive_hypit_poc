@@ -1,0 +1,13 @@
+hypit doctor
+exit=0 sec=1.6
+Hypit Doctor
+
+  Project          D:\oss_eval\hypit\proj_serum
+  Runtime Profile  hypit.runtime.json
+  Scope            selected Runtime and project Results
+
+??HTML_BROWSER_SELECTION
+  Profile browser: C:\Users\llm\.cache\hyperframes\chrome\chrome-headless-shell\win64-152.0.7977.30\chrome-headless-shell-win64\chrome-headless-shell.exe
+  Subject  html.local
+
+1 diagnostic

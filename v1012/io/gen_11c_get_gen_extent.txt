@@ -1,0 +1,8 @@
+hypit get bld_20261116T020541166Z_96152EFD8F --output gen-media.extent --to D:\oss_eval\hypit\proj_serum\out\v1012_gen\gen-media_extent
+exit=1 sec=0.9
+횞 Command failed
+System.Management.Automation.RemoteException
+  CLI_ERROR
+  Build bld_20261116T020541166Z_96152EFD8F has no Output gen-media.extent
+System.Management.Automation.RemoteException
+Run with --debug to include the internal stack trace.

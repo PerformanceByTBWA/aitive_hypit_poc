@@ -1,0 +1,4 @@
+hypit media frames references\v1012\source.mp4 --at 1.0,2.2,4.2,5.2,6.2,8.2,9.2,10.6,11.2,12.3,14.5 --to references\v1012\evidence\full
+exit=0 sec=3.4
+evidence\full
+  11 frames from 1.001 s to 14.5145 s

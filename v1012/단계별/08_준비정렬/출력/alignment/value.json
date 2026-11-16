@@ -1,0 +1,355 @@
+{
+  "format": "hypit.result-value@1",
+  "value": {
+    "boundaries": [
+      {
+        "frame": 0,
+        "id": "segment:ad:start"
+      },
+      {
+        "frame": 48,
+        "id": "segment:ad:token:1:start"
+      },
+      {
+        "frame": 54,
+        "id": "segment:ad:token:1:end"
+      },
+      {
+        "frame": 55,
+        "id": "segment:ad:token:2:start"
+      },
+      {
+        "frame": 65,
+        "id": "segment:ad:token:2:end"
+      },
+      {
+        "frame": 67,
+        "id": "segment:ad:token:3:start"
+      },
+      {
+        "frame": 70,
+        "id": "segment:ad:token:3:end"
+      },
+      {
+        "frame": 72,
+        "id": "segment:ad:token:4:start"
+      },
+      {
+        "frame": 82,
+        "id": "segment:ad:token:4:end"
+      },
+      {
+        "frame": 82,
+        "id": "segment:ad:token:5:start"
+      },
+      {
+        "frame": 108,
+        "id": "segment:ad:token:5:end"
+      },
+      {
+        "frame": 113,
+        "id": "segment:ad:token:6:start"
+      },
+      {
+        "frame": 131,
+        "id": "segment:ad:token:6:end"
+      },
+      {
+        "frame": 142,
+        "id": "segment:ad:token:7:start"
+      },
+      {
+        "frame": 155,
+        "id": "segment:ad:token:7:end"
+      },
+      {
+        "frame": 156,
+        "id": "segment:ad:token:8:start"
+      },
+      {
+        "frame": 167,
+        "id": "segment:ad:token:8:end"
+      },
+      {
+        "frame": 175,
+        "id": "segment:ad:token:9:start"
+      },
+      {
+        "frame": 198,
+        "id": "segment:ad:token:9:end"
+      },
+      {
+        "frame": 221,
+        "id": "segment:ad:token:10:start"
+      },
+      {
+        "frame": 235,
+        "id": "segment:ad:token:10:end"
+      },
+      {
+        "frame": 237,
+        "id": "segment:ad:token:11:start"
+      },
+      {
+        "frame": 250,
+        "id": "segment:ad:token:11:end"
+      },
+      {
+        "frame": 254,
+        "id": "segment:ad:token:12:start"
+      },
+      {
+        "frame": 272,
+        "id": "segment:ad:token:12:end"
+      },
+      {
+        "frame": 274,
+        "id": "segment:ad:token:13:start"
+      },
+      {
+        "frame": 290,
+        "id": "segment:ad:token:13:end"
+      },
+      {
+        "frame": 312,
+        "id": "segment:ad:token:14:start"
+      },
+      {
+        "frame": 323,
+        "id": "segment:ad:token:14:end"
+      },
+      {
+        "frame": 325,
+        "id": "segment:ad:token:15:start"
+      },
+      {
+        "frame": 333,
+        "id": "segment:ad:token:15:end"
+      },
+      {
+        "frame": 336,
+        "id": "segment:ad:token:16:start"
+      },
+      {
+        "frame": 344,
+        "id": "segment:ad:token:16:end"
+      },
+      {
+        "frame": 344,
+        "id": "segment:ad:token:17:start"
+      },
+      {
+        "frame": 354,
+        "id": "segment:ad:token:17:end"
+      },
+      {
+        "frame": 359,
+        "id": "segment:ad:token:18:start"
+      },
+      {
+        "frame": 368,
+        "id": "segment:ad:token:18:end"
+      },
+      {
+        "frame": 379,
+        "id": "segment:ad:token:19:start"
+      },
+      {
+        "frame": 389,
+        "id": "segment:ad:token:19:end"
+      },
+      {
+        "frame": 388,
+        "id": "segment:ad:token:20:start"
+      },
+      {
+        "frame": 398,
+        "id": "segment:ad:token:20:end"
+      },
+      {
+        "frame": 399,
+        "id": "segment:ad:token:21:start"
+      },
+      {
+        "frame": 410,
+        "id": "segment:ad:token:21:end"
+      },
+      {
+        "frame": 417,
+        "id": "segment:ad:token:22:start"
+      },
+      {
+        "frame": 433,
+        "id": "segment:ad:token:22:end"
+      },
+      {
+        "frame": 450,
+        "id": "segment:ad:end"
+      }
+    ],
+    "domainId": "ad-media",
+    "narrativeId": "story",
+    "segment": {
+      "endBoundaryId": "segment:ad:end",
+      "segmentId": "ad",
+      "startBoundaryId": "segment:ad:start"
+    },
+    "tokens": [
+      {
+        "endBoundaryId": "segment:ad:token:1:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:1:start",
+        "text": "지금",
+        "tokenId": "segment:ad:token:1"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:2:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:2:start",
+        "text": "보시는",
+        "tokenId": "segment:ad:token:2"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:3:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:3:start",
+        "text": "이",
+        "tokenId": "segment:ad:token:3"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:4:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:4:start",
+        "text": "광고",
+        "tokenId": "segment:ad:token:4"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:5:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:5:start",
+        "text": "AI로",
+        "tokenId": "segment:ad:token:5"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:6:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:6:start",
+        "text": "만들었어요",
+        "tokenId": "segment:ad:token:6"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:7:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:7:start",
+        "text": "이미지만",
+        "tokenId": "segment:ad:token:7"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:8:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:8:start",
+        "text": "넣으면",
+        "tokenId": "segment:ad:token:8"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:9:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:9:start",
+        "text": "딸깍",
+        "tokenId": "segment:ad:token:9"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:10:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:10:start",
+        "text": "모든",
+        "tokenId": "segment:ad:token:10"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:11:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:11:start",
+        "text": "과정이",
+        "tokenId": "segment:ad:token:11"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:12:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:12:start",
+        "text": "자동으로",
+        "tokenId": "segment:ad:token:12"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:13:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:13:start",
+        "text": "이루어져요",
+        "tokenId": "segment:ad:token:13"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:14:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:14:start",
+        "text": "영상",
+        "tokenId": "segment:ad:token:14"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:15:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:15:start",
+        "text": "제작",
+        "tokenId": "segment:ad:token:15"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:16:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:16:start",
+        "text": "기간",
+        "tokenId": "segment:ad:token:16"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:17:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:17:start",
+        "text": "한정",
+        "tokenId": "segment:ad:token:17"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:18:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:18:start",
+        "text": "무료",
+        "tokenId": "segment:ad:token:18"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:19:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:19:start",
+        "text": "모두의",
+        "tokenId": "segment:ad:token:19"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:20:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:20:start",
+        "text": "TV",
+        "tokenId": "segment:ad:token:20"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:21:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:21:start",
+        "text": "광고",
+        "tokenId": "segment:ad:token:21"
+      },
+      {
+        "endBoundaryId": "segment:ad:token:22:end",
+        "segmentId": "ad",
+        "startBoundaryId": "segment:ad:token:22:start",
+        "text": "애디렉트",
+        "tokenId": "segment:ad:token:22"
+      }
+    ]
+  },
+  "resources": []
+}

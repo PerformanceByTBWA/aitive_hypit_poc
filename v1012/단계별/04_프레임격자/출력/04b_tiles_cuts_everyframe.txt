@@ -1,0 +1,4 @@
+hypit media tiles references\v1012\source.mp4 --ranges references\v1012\io\04_ranges.json --every-frame --columns 6 --rows 2 --cell 320 --transcript references\v1012\transcript.json --to references\v1012\evidence\cuts
+exit=0 sec=4
+evidence\cuts
+  10 grids from continuous source decoding

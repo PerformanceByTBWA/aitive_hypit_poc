@@ -1,0 +1,6 @@
+hypit check .\v1012.svrun
+exit=0 sec=2.8
+✓ Run source is valid
+
+  Run      v1012.svrun
+  Targets  final.video

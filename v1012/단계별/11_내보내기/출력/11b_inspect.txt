@@ -1,0 +1,25 @@
+hypit inspect bld_20261111T082016026Z_61FF51E113 --verbose
+exit=0 sec=1
+✓ Build Result
+
+  Build              bld_20261111T082016026Z_61FF51E113
+  Created            2026. 11. 11. 오후 5:20:16
+  Outcome            complete
+  Targets            1
+  Available Outputs  14
+
+Execution log    hypit logs bld_20261111T082016026Z_61FF51E113
+Target    final.video · @hypit/blob@1/Blob · resource · video/mp4 · 3320403 bytes
+Output    ad-media.domain · @hypit/temporal@1/LocalTemporalDomain · composite
+Output    ad-media.extent · @hypit/temporal@1/TemporalExtent · composite
+Output    ad-media.media · @hypit/media@1/SynchronizedMedia · composite
+Output    ad-semantic.alignment · @hypit/narrative-temporal@1/NarrativeAlignment · composite
+Output    caption-timing · @hypit/caption@1/CaptionTiming · composite
+Output    captions.visual · @hypit/composition@1/VisualTrack · composite
+Output    full-frame · @hypit/spatial@1/SpatialFrame · composite
+Output    main.composition · @hypit/composition@1/Composition · composite
+Output    mix.audio · @hypit/composition@1/AudioTrack · composite
+Output    picture.visual · @hypit/composition@1/VisualTrack · composite
+Output    speech.ad · @hypit/temporal@1/TemporalWindow · composite
+Output    speech.timeline · @hypit/timeline@1/Timeline · composite
+Output    story-time · @hypit/narrative-temporal@1/NarrativeProjection · composite

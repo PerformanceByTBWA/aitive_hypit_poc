@@ -1,0 +1,8 @@
+hypit media tile references\v1012\source.mp4 --start 0 --end 15 --every 0.5 --columns 6 --transcript references\v1012\transcript.json --to references\v1012\evidence\words_05s.jpg
+hypit media tiles references\v1012\source.mp4 --ranges references\v1012\io\04_ranges.json --every-frame --columns 6 --rows 2 --cell 320 --transcript references\v1012\transcript.json --to references\v1012\evidence\cuts
+hypit media tile references\v1012\source.mp4 --around 딸깍! --transcript references\v1012\transcript.json --padding 0.6 --every 0.1 --columns 6 --cell 320 --to references\v1012\evidence\ttalkkak.jpg
+hypit media tile references\v1012\source.mp4 --start 0 --end 3 --every 0.25 --columns 6 --cell 320 --transcript references\v1012\transcript.json --to references\v1012\evidence\hook.jpg
+hypit media tile references\v1012\source.mp4 --start 10 --end 15 --every 0.25 --columns 5 --cell 320 --transcript references\v1012\transcript.json --to references\v1012\evidence\endcard.jpg
+hypit media frames references\v1012\source.mp4 --at 1.0,2.2,4.2,5.2,6.2,8.2,9.2,10.6,11.2,12.3,14.5 --to references\v1012\evidence\full
+hypit media tile references\v1012\source.mp4 --start 7.2 --end 10.4 --every 0.2 --columns 4 --cell 400 --transcript references\v1012\transcript.json --to references\v1012\evidence\process.jpg
+(전체 1초·0.5초 간격 whole_1s·whole_05s 는 낱말 없이 먼저 뽑음: hypit media tile ... --start 0 --end 15 --every 1|0.5)

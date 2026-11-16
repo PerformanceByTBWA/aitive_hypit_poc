@@ -1,0 +1,89 @@
+<?svml using="@hypit/markup@1"?>
+
+<!-- 애디렉트 15초 생성 컷 교체판: 원본 영상·소리·낱말 맞춤 자막은 v1012.svml 과 같고,
+     실사 4자리만 Seedance 2.0 생성 영상(11/14 Higgsfield, 480p 15초 1회 생성)의 해당 컷으로 덮음.
+     자리(결과 30fps 프레임) 0–40 · 40–89 · 89–140 · 190–217, 생성 영상 안 시작 12f · 137f · 272f · 356f(컷 시작 + 0.4초). -->
+<svml>
+  <import from="@hypit/script@1"/>
+  <import as="asset" from="@hypit/media@1"/>
+  <import as="mediaop" from="@hypit/media-operations@1"/>
+  <import as="whisperx" from="@hypit/whisperx@1"/>
+  <import as="semantic" from="@hypit/narrative-temporal@1"/>
+  <import as="narrative-caption" from="@hypit/narrative-caption@1"/>
+  <import as="time" from="@hypit/timeline-author@1"/>
+  <import as="visual" from="@hypit/visual-track@1"/>
+  <import as="audio" from="@hypit/audio-track@1"/>
+  <import as="caption-fine" from="@hypit/caption-fine@1"/>
+  <import as="fonts" from="@hypit/fontsource@1"/>
+  <import as="space" from="@hypit/spatial@1"/>
+  <import as="film" from="@hypit/film@1"/>
+  <import as="html" from="@hypit/html-video@1"/>
+  <import as="recipes" source="./recipes_v1012.svs"/>
+
+  <script id="story">
+    <ad>
+      <NARRATOR>지금 보시는 이 광고 || AI로 만들었어요. || 이미지만 넣으면 || @{ttalkkak}딸깍!@{/ttalkkak} || 모든 과정이 || 자동으로 이루어져요. || @{offer}영상 제작 기간 한정 || 무료!@{/offer} || 모두의 TV 광고 || 애디렉트!
+    </ad>
+  </script>
+
+  <asset:Video id="ad-src" src="./references/v1012/source.mp4"/>
+  <asset:Video id="gen-src" src="./references/v1012/gen/seedance_raw.mp4"/>
+
+  <space:Canvas id="wide" width="1920" height="1080"/>
+  <time:Clock id="clock" frame-rate="30"/>
+  <space:Frame id="full-frame" within={wide.bounds} left="0%" top="0%" right="100%" bottom="100%"/>
+
+  <mediaop:Normalize id="ad-media" source={ad-src}
+    video="primary-moving" audio="default" span-authority="video" clock={clock}/>
+  <mediaop:Normalize id="gen-media" source={gen-src}
+    video="primary-moving" audio="none" span-authority="video" clock={clock}/>
+  <whisperx:Alignment id="ad-semantic" narrative={story}
+    segment={story.segment.ad} media={ad-media.media} domain={ad-media.domain} language="ko"/>
+
+  <time:Timeline id="speech" clock={clock} end="ad.end">
+    <time:Window id="ad" from="start" for={ad-media.extent}/>
+    <time:Window id="g1" from="0f" until="40f"/>
+    <time:Window id="g2" from="40f" until="89f"/>
+    <time:Window id="g3" from="89f" until="140f"/>
+    <time:Window id="g4" from="190f" until="217f"/>
+  </time:Timeline>
+
+  <semantic:Projection id="story-time" narrative={story} timeline={speech.timeline}>
+    <semantic:Map alignment={ad-semantic.alignment} domain={ad-media.domain} window={speech.ad}/>
+  </semantic:Projection>
+
+  <visual:Track id="picture" timeline={speech.timeline}>
+    <visual:Clip id="ad-clip" media={ad-media.media} during={speech.ad} frame={full-frame} z="0" fit="cover"/>
+    <visual:Clip id="g1-clip" media={gen-media.media} during={speech.g1} frame={full-frame} z="1" fit="cover">
+      <visual:Map target-at="start" source-at="12f" rate="1"/>
+    </visual:Clip>
+    <visual:Clip id="g2-clip" media={gen-media.media} during={speech.g2} frame={full-frame} z="1" fit="cover">
+      <visual:Map target-at="start" source-at="137f" rate="1"/>
+    </visual:Clip>
+    <visual:Clip id="g3-clip" media={gen-media.media} during={speech.g3} frame={full-frame} z="1" fit="cover">
+      <visual:Map target-at="start" source-at="272f" rate="1"/>
+    </visual:Clip>
+    <visual:Clip id="g4-clip" media={gen-media.media} during={speech.g4} frame={full-frame} z="1" fit="cover">
+      <visual:Map target-at="start" source-at="356f" rate="1"/>
+    </visual:Clip>
+  </visual:Track>
+  <audio:Track id="mix" timeline={speech.timeline}>
+    <audio:Clip id="ad-audio" source={ad-media.media} during={speech.ad}/>
+  </audio:Track>
+
+  <fonts:Face id="kr-font" package="@fontsource-variable/noto-sans-kr" weight="800" style="normal"/>
+
+  <caption-fine:Style id="caption-style" recipe={recipes.caption.top} font={kr-font}/>
+  <narrative-caption:Timing id="caption-timing" document={story.caption} binding={story.caption-binding} projection={story-time}/>
+  <caption-fine:Caption id="captions" document={story.caption} timing={caption-timing}
+    timeline={speech.timeline} within={wide.bounds}>
+    <caption-fine:Use style={caption-style}/>
+  </caption-fine:Caption>
+
+  <film:Film id="main" canvas={wide.canvas} timeline={speech.timeline} appearance={recipes.film.wide}>
+    <film:Track source={picture.visual}/>
+    <film:Track source={mix.audio}/>
+    <film:Track source={captions.visual}/>
+  </film:Film>
+  <html:Video id="final" composition={main.composition} timeline={speech.timeline}/>
+</svml>

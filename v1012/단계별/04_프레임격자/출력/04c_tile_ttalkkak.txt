@@ -1,0 +1,5 @@
+hypit media tile references\v1012\source.mp4 --around 딸깍! --transcript references\v1012\transcript.json --padding 0.6 --every 0.1 --columns 6 --cell 320 --to references\v1012\evidence\ttalkkak.jpg
+exit=0 sec=6
+evidence\ttalkkak.jpg
+  20 labeled frames, 6×4, 320 px cells
+  5.253 s  5.353 s  5.453 s  5.553 s  5.653 s  5.753 s  5.853 s  5.953 s  6.053 s  6.153 s  6.253 s  6.353 s  6.453 s  6.553 s  6.653 s  6.753 s  6.853 s  6.953 s  7.053 s  7.153 s

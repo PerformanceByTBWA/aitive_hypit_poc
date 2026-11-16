@@ -1,0 +1,6 @@
+hypit runtime up --max-wait-ms 600000
+exit=0 sec=41.4
+  쨌 Installing whisperx.local ??Prepare the locked Python environment 쨌 log C:\Users\llm\AppData\Local\Hypit\programs\whisperx-whisperx.local-127.0.0.1%3A8765\install.log
+  쨌 Installing whisperx.local ??Prepare WhisperX large-v3 and alignment resources for en, ko 쨌 log C:\Users\llm\AppData\Local\Hypit\programs\whisperx-whisperx.local-127.0.0.1%3A8765\install.log
+  쨌 Starting whisperx.local 쨌 log C:\Users\llm\AppData\Local\Hypit\programs\whisperx-whisperx.local-127.0.0.1%3A8765\program.log
+??Local Runtime ready

@@ -1,0 +1,5 @@
+hypit media tile references\v1012\source.mp4 --start 7.2 --end 10.4 --every 0.2 --columns 4 --cell 400 --transcript references\v1012\transcript.json --to references\v1012\evidence\process.jpg
+exit=0 sec=5.1
+evidence\process.jpg
+  16 labeled frames, 4×4, 400 px cells
+  7.2 s  7.4 s  7.6 s  7.8 s  8 s  8.2 s  8.4 s  8.6 s  8.8 s  9 s  9.2 s  9.4 s  9.6 s  9.8 s  10 s  10.2 s

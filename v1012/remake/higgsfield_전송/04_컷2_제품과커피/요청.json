@@ -1,0 +1,32 @@
+{
+  "도구": "generate_video_batch",
+  "작업 번호": "4584cb84-31a0-4bed-9d93-9dd0bb019bdc",
+  "비용(크레딧)": 4,
+  "params": {
+    "model(요청)": "seedance_2_0",
+    "mode": "fast",
+    "model(서비스 기록)": "seedance_2_0_fast",
+    "aspect_ratio": "16:9",
+    "duration": 4,
+    "resolution": "480p",
+    "width": 854,
+    "height": 480,
+    "generate_audio": false,
+    "genre": "auto",
+    "bitrate_mode": "standard",
+    "multi_shots": false,
+    "speedramp": "auto",
+    "prompt_language(서비스 기록값)": "en"
+  },
+  "medias": [
+    {
+      "role(요청)": "image_references",
+      "role(서비스 기록)": "image",
+      "prompt 안 표시": "image_1",
+      "value(작업 번호)": "d053da39-5f9b-4117-9ba8-9c54e32b8343",
+      "가리킨 그림": "..\\참조그림\\ref_product.png"
+    }
+  ],
+  "prompt": "prompt.txt",
+  "context(분석용 칸)": "가상 음료 광고 시험용 실사 4컷 생성(컷별 4초)"
+}

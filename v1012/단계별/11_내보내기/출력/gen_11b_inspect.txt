@@ -1,0 +1,30 @@
+hypit inspect bld_20261116T020541166Z_96152EFD8F --verbose
+exit=0 sec=0.9
+✓ Build Result
+
+  Build              bld_20261116T020541166Z_96152EFD8F
+  Created            2026. 11. 16. 오전 11:05:41
+  Outcome            complete
+  Targets            1
+  Available Outputs  19
+
+Execution log    hypit logs bld_20261116T020541166Z_96152EFD8F
+Target    final.video · @hypit/blob@1/Blob · resource · video/mp4 · 3129809 bytes
+Output    ad-media.domain · @hypit/temporal@1/LocalTemporalDomain · composite
+Output    ad-media.extent · @hypit/temporal@1/TemporalExtent · composite
+Output    ad-media.media · @hypit/media@1/SynchronizedMedia · composite
+Output    ad-semantic.alignment · @hypit/narrative-temporal@1/NarrativeAlignment · composite
+Output    caption-timing · @hypit/caption@1/CaptionTiming · composite
+Output    captions.visual · @hypit/composition@1/VisualTrack · composite
+Output    full-frame · @hypit/spatial@1/SpatialFrame · composite
+Output    gen-media.media · @hypit/media@1/SynchronizedMedia · composite
+Output    main.composition · @hypit/composition@1/Composition · composite
+Output    mix.audio · @hypit/composition@1/AudioTrack · composite
+Output    picture.visual · @hypit/composition@1/VisualTrack · composite
+Output    speech.ad · @hypit/temporal@1/TemporalWindow · composite
+Output    speech.g1 · @hypit/temporal@1/TemporalWindow · composite
+Output    speech.g2 · @hypit/temporal@1/TemporalWindow · composite
+Output    speech.g3 · @hypit/temporal@1/TemporalWindow · composite
+Output    speech.g4 · @hypit/temporal@1/TemporalWindow · composite
+Output    speech.timeline · @hypit/timeline@1/Timeline · composite
+Output    story-time · @hypit/narrative-temporal@1/NarrativeProjection · composite

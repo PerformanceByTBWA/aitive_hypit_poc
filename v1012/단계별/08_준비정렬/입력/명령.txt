@@ -1,0 +1,8 @@
+# 재현판(v1012)
+hypit build .\v1012.svrun --follow --max-wait-ms 1800000
+(빌드 한 번 안에서 이 단계 요청 4개: inspect-media · normalize-media · project-speech-evidence-audio · whisperx-alignment(ko))
+
+# 교체판(v1012_gen)
+hypit build .\v1012_gen.svrun --follow --max-wait-ms 1800000
+(빌드 한 번 안에서 이 단계 요청 6개: inspect-media ×2 · normalize-media ×2(원본·생성 영상) · project-speech-evidence-audio · whisperx-alignment(ko))
+생성 영상 입력: 09_재료생성\출력\seedance_raw.mp4

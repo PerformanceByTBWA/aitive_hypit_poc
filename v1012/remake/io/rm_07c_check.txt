@@ -1,0 +1,6 @@
+hypit check .\remake.svrun
+exit=0 sec=2.3
+??Run source is valid
+
+  Run      remake.svrun
+  Targets  final.video

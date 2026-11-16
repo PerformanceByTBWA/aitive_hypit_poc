@@ -1,0 +1,24 @@
+{
+  "format": "hypit.result-value@1",
+  "value": {
+    "end": {
+      "frame": 450,
+      "id": "speech.ad.end",
+      "subjectId": "speech.ad",
+      "timelineId": "speech"
+    },
+    "id": "speech.ad",
+    "span": {
+      "endFrameExclusive": 450,
+      "startFrame": 0
+    },
+    "start": {
+      "frame": 0,
+      "id": "speech.ad.start",
+      "subjectId": "speech.ad",
+      "timelineId": "speech"
+    },
+    "subjectId": "speech.ad"
+  },
+  "resources": []
+}

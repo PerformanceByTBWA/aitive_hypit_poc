@@ -1,0 +1,11 @@
+hypit media probe references\v1012\gen\seedance_raw.mp4 --json
+exit=0 sec=3.9
+{
+  "path": "D:\\oss_eval\\hypit\\proj_serum\\references\\v1012\\gen\\seedance_raw.mp4",
+  "duration": 15.042,
+  "hasVideo": true,
+  "width": 864,
+  "height": 496,
+  "frameRate": 24,
+  "hasAudio": false
+}

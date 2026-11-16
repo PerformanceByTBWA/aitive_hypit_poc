@@ -1,0 +1,32 @@
+hypit inspect bld_20261116T025619221Z_623AF3E4AA --verbose
+exit=0 sec=1
+??Build Result
+
+  Build              bld_20261116T025619221Z_623AF3E4AA
+  Created            2026. 11. 16. ?ㅼ쟾 11:56:19
+  Outcome            complete
+  Targets            1
+  Available Outputs  42
+
+Execution log    hypit logs bld_20261116T025619221Z_623AF3E4AA --project 'D:\oss_eval\hypit\proj_serum'
+Target    final.video 쨌 @hypit/blob@1/Blob 쨌 resource 쨌 video/mp4 쨌 2158990 bytes
+Output    ad-media.domain 쨌 @hypit/temporal@1/LocalTemporalDomain 쨌 composite
+Output    ad-media.extent 쨌 @hypit/temporal@1/TemporalExtent 쨌 composite
+Output    ad-media.media 쨌 @hypit/media@1/SynchronizedMedia 쨌 composite
+Output    ad-semantic.alignment 쨌 @hypit/narrative-temporal@1/NarrativeAlignment 쨌 composite
+Output    c1-media.media 쨌 @hypit/media@1/SynchronizedMedia 쨌 composite
+Output    c2-media.media 쨌 @hypit/media@1/SynchronizedMedia 쨌 composite
+Output    c3-media.media 쨌 @hypit/media@1/SynchronizedMedia 쨌 composite
+Output    c4-media.media 쨌 @hypit/media@1/SynchronizedMedia 쨌 composite
+Output    caption-timing 쨌 @hypit/caption@1/CaptionTiming 쨌 composite
+Output    captions.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+Output    full-frame 쨌 @hypit/spatial@1/SpatialFrame 쨌 composite
+Output    g-band.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+Output    g-bug.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+Output    g-cards.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+Output    g-end.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+Output    g-now.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+Output    g-promo.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+Output    g-select.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+Output    g-title.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+22 more Outputs 쨌 use --limit <count> or --output <name>

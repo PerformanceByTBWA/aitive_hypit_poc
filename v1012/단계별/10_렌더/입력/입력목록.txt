@@ -1,0 +1,8 @@
+재현판(v1012)
+- 08_준비정렬\출력 (정규화 영상·단어 정렬)
+- 06_설계도작성\출력\recipes_v1012.svs (자막 모양), 글꼴 Noto Sans KR 800
+- 빌드 안 요청 3개: rasterize-visual 450프레임 · render-timeline-audio · mux-program-media
+
+교체판(v1012_gen)
+- 위와 같음 + 정규화한 생성 영상(09_재료생성\출력\seedance_raw.mp4 → 30fps)
+- 화면 층: 원본(z=0, 0–450f) 위에 생성 컷 4개(z=1, g1 0–40f · g2 40–89f · g3 89–140f · g4 190–217f), 소리 = 원본, 자막 = 재현판과 같음

@@ -1,0 +1,6 @@
+hypit runtime use .\hypit.runtime.json
+hypit runtime up --max-wait-ms 600000
+hypit doctor
+hypit transcribe references\v1012\source.mp4 --language ko --to references\v1012\transcript.json
+hypit runtime down
+hypit programs down

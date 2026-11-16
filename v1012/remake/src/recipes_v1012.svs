@@ -1,0 +1,58 @@
+<?svml using="@hypit/recipe@1"?>
+
+<sheet version="1">
+  film.wide { background: #000000; }
+
+  caption.top {
+    stack-order: 70;
+    x: 0.5;
+    y: 0.085;
+    width: 0.7;
+    height: 0.11;
+    anchor-x: center;
+    anchor-y: center;
+    align: center;
+    block-align: center;
+    inline-size: hug;
+    wrap: word;
+    max-lines: 1;
+    max-words-per-line: 6;
+    line-height: 1.25;
+    size: 50;
+    letter-spacing: -0.8;
+    fill: #FFFFFF;
+    stroke-color: #1A1033;
+    stroke-width: 2;
+    shadow-color: #000000;
+    shadow-opacity: 0.55;
+    shadow-x: 0;
+    shadow-y: 3;
+    shadow-blur: 8;
+    background: #00000000;
+    border-color: #00000000;
+    border-width: 0;
+    padding: 0 0;
+    radius: 0;
+    karaoke: current;
+    karaoke-transition: step;
+    active-fill: #FFFFFF;
+    active-box: current;
+    active-box-continuity: isolated;
+    active-box-background: #5B2EFF;
+    active-box-border-color: #00000000;
+    active-box-border-width: 0;
+    active-box-padding: 4 10;
+    active-box-radius: 8;
+    active-box-transition-frames: 2;
+    active-response: pop;
+    active-response-frames: 3;
+    active-scale: 1.03;
+    lead-frames: 2;
+    tail-frames: 2;
+    handoff: cut;
+    cue-enter: fade;
+    cue-enter-frames: 2;
+    cue-exit: fade;
+    cue-exit-frames: 2;
+  }
+</sheet>

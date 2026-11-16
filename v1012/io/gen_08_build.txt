@@ -1,0 +1,24 @@
+hypit build .\v1012_gen.svrun --follow --max-wait-ms 1800000
+exit=0 sec=61.3
+??Build submitted
+
+  Build   bld_20261116T020541166Z_96152EFD8F
+  Target  final.video
+  Work    9 requests
+
+Following accepted work. Ctrl-C stops watching; the Build continues.
+  쨌 Working 쨌 0/9 steps complete 쨌 1s
+  쨌 Working 쨌 1/9 steps complete 쨌 9s
+  쨌 Working 쨌 5/9 steps complete 쨌 1 Transcribing and aligning words 쨌 15s
+  쨌 Working 쨌 6/9 steps complete 쨌 28s
+  쨌 Working 쨌 7/9 steps complete 쨌 1 preparing resources 쨌 33s
+  쨌 Working 쨌 7/9 steps complete 쨌 1 rasterizing frames 쨌 31/450 frames 쨌 39s
+  쨌 Working 쨌 7/9 steps complete 쨌 1 rasterizing frames 쨌 161/450 frames 쨌 44s
+  쨌 Working 쨌 7/9 steps complete 쨌 1 rasterizing frames 쨌 305/450 frames 쨌 49s
+  쨌 Working 쨌 7/9 steps complete 쨌 1 rasterizing frames 쨌 443/450 frames 쨌 55s
+??Build complete
+
+  Build  bld_20261116T020541166Z_96152EFD8F
+
+Inspect  hypit inspect bld_20261116T020541166Z_96152EFD8F --project 'D:\oss_eval\hypit\proj_serum'
+Export   hypit get bld_20261116T020541166Z_96152EFD8F --output final.video --project 'D:\oss_eval\hypit\proj_serum' --to <path>

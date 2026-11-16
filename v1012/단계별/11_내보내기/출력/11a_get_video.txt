@@ -1,0 +1,3 @@
+hypit get bld_20261111T082016026Z_61FF51E113 --output final.video --to v1012_replica.mp4
+exit=0 sec=1
+✓ Exported final.video → out\v1012\v1012_replica.mp4

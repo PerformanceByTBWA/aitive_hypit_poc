@@ -1,0 +1,3 @@
+hypit get bld_20261116T025619221Z_623AF3E4AA --output final.video --to D:\oss_eval\hypit\proj_serum\out\remake\remake.mp4
+exit=0 sec=1
+??Exported final.video ??out\remake\remake.mp4

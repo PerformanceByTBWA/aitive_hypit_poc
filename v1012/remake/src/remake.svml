@@ -1,0 +1,152 @@
+<?svml using="@hypit/markup@1"?>
+
+<!-- 애디렉트 15초 콜드브루판(전체 재생성): 내레이션·배경 소리 = 원본 그대로(소리·정렬에만 원본 사용, 원본 화면은 안 씀)
+     실사 4자리 = Seedance 생성 컷(ONSAE 콜드브루, 11/16 Higgsfield), 그래픽 전부 = 프로젝트 부품 @ptbwa/addirect-scenes
+     장면 경계는 원본 TIMELINE 과 같음(결과 30fps 프레임). 문구는 각 Scene 의 copy, 그림은 image-1~4. -->
+<svml>
+  <import from="@hypit/script@1"/>
+  <import as="asset" from="@hypit/media@1"/>
+  <import as="mediaop" from="@hypit/media-operations@1"/>
+  <import as="whisperx" from="@hypit/whisperx@1"/>
+  <import as="semantic" from="@hypit/narrative-temporal@1"/>
+  <import as="narrative-caption" from="@hypit/narrative-caption@1"/>
+  <import as="time" from="@hypit/timeline-author@1"/>
+  <import as="visual" from="@hypit/visual-track@1"/>
+  <import as="audio" from="@hypit/audio-track@1"/>
+  <import as="caption-fine" from="@hypit/caption-fine@1"/>
+  <import as="fonts" from="@hypit/fontsource@1"/>
+  <import as="space" from="@hypit/spatial@1"/>
+  <import as="film" from="@hypit/film@1"/>
+  <import as="html" from="@hypit/html-video@1"/>
+  <import as="promo" from="@ptbwa/addirect-scenes@1"/>
+  <import as="recipes" source="./recipes_v1012.svs"/>
+
+  <script id="story">
+    <ad>
+      <NARRATOR>지금 보시는 이 광고 || AI로 만들었어요. || 이미지만 넣으면 || @{ttalkkak}딸깍!@{/ttalkkak} || 모든 과정이 || 자동으로 이루어져요. || @{offer}영상 제작 기간 한정 || 무료!@{/offer} || 모두의 TV 광고 || 애디렉트!
+    </ad>
+  </script>
+
+  <!-- 재료 -->
+  <asset:Video id="ad-src" src="./references/v1012/source.mp4"/>
+  <asset:Video id="c1-src" src="./references/remake/cut1_back.mp4"/>
+  <asset:Video id="c2-src" src="./references/remake/cut2_product.mp4"/>
+  <asset:Video id="c3-src" src="./references/remake/cut3_table.mp4"/>
+  <asset:Video id="c4-src" src="./references/remake/cut4_hold.mp4"/>
+  <asset:Image id="product" src="./references/remake/ref_product.png"/>
+  <asset:Image id="still-1" src="./references/remake/still_s1.jpg"/>
+  <asset:Image id="still-2" src="./references/remake/still_s2.jpg"/>
+  <asset:Image id="still-3" src="./references/remake/still_s3.jpg"/>
+
+  <space:Canvas id="wide" width="1920" height="1080"/>
+  <time:Clock id="clock" frame-rate="30"/>
+  <space:Frame id="full-frame" within={wide.bounds} left="0%" top="0%" right="100%" bottom="100%"/>
+
+  <mediaop:Normalize id="ad-media" source={ad-src} video="primary-moving" audio="default" span-authority="video" clock={clock}/>
+  <mediaop:Normalize id="c1-media" source={c1-src} video="primary-moving" audio="none" span-authority="video" clock={clock}/>
+  <mediaop:Normalize id="c2-media" source={c2-src} video="primary-moving" audio="none" span-authority="video" clock={clock}/>
+  <mediaop:Normalize id="c3-media" source={c3-src} video="primary-moving" audio="none" span-authority="video" clock={clock}/>
+  <mediaop:Normalize id="c4-media" source={c4-src} video="primary-moving" audio="none" span-authority="video" clock={clock}/>
+  <whisperx:Alignment id="ad-semantic" narrative={story}
+    segment={story.segment.ad} media={ad-media.media} domain={ad-media.domain} language="ko"/>
+
+  <!-- 시간 틀: 장면 경계 = 원본 TIMELINE -->
+  <time:Timeline id="speech" clock={clock} end="ad.end">
+    <time:Window id="ad" from="start" for={ad-media.extent}/>
+    <time:Window id="s1" from="0f" until="40f"/>
+    <time:Window id="s2" from="40f" until="89f"/>
+    <time:Window id="s3" from="89f" until="140f"/>
+    <time:Window id="s4" from="190f" until="217f"/>
+    <time:Window id="w-bug" from="0f" until="377f"/>
+    <time:Window id="w-title" from="8f" until="40f"/>
+    <time:Window id="w-now" from="42f" until="89f"/>
+    <time:Window id="w-select" from="86f" until="140f"/>
+    <time:Window id="w-upload" from="140f" until="190f"/>
+    <time:Window id="w-ttal" from="190f" until="217f"/>
+    <time:Window id="w-cards" from="217f" until="307f"/>
+    <time:Window id="w-promo" from="307f" until="377f"/>
+    <time:Window id="w-band" from="307f" until="ad.end"/>
+    <time:Window id="w-end" from="377f" until="ad.end"/>
+  </time:Timeline>
+
+  <semantic:Projection id="story-time" narrative={story} timeline={speech.timeline}>
+    <semantic:Map alignment={ad-semantic.alignment} domain={ad-media.domain} window={speech.ad}/>
+  </semantic:Projection>
+
+  <!-- 실사 4자리(생성 컷 안 시작 프레임 = 움직임이 살아 있는 구간) -->
+  <visual:Track id="picture" timeline={speech.timeline}>
+    <visual:Clip id="s1-clip" media={c1-media.media} during={speech.s1} frame={full-frame} z="0" fit="cover">
+      <visual:Map target-at="start" source-at="30f" rate="1"/>
+    </visual:Clip>
+    <visual:Clip id="s2-clip" media={c2-media.media} during={speech.s2} frame={full-frame} z="0" fit="cover">
+      <visual:Map target-at="start" source-at="36f" rate="1"/>
+    </visual:Clip>
+    <visual:Clip id="s3-clip" media={c3-media.media} during={speech.s3} frame={full-frame} z="0" fit="cover">
+      <visual:Map target-at="start" source-at="30f" rate="1"/>
+    </visual:Clip>
+    <visual:Clip id="s4-clip" media={c4-media.media} during={speech.s4} frame={full-frame} z="0" fit="cover">
+      <visual:Map target-at="start" source-at="66f" rate="1"/>
+    </visual:Clip>
+  </visual:Track>
+  <audio:Track id="mix" timeline={speech.timeline}>
+    <audio:Clip id="ad-audio" source={ad-media.media} during={speech.ad}/>
+  </audio:Track>
+
+  <fonts:Face id="kr" package="@fontsource-variable/noto-sans-kr" weight="500" style="normal"/>
+  <fonts:Face id="kr-heavy" package="@fontsource-variable/noto-sans-kr" weight="900" style="normal"/>
+  <fonts:Face id="kr-cap" package="@fontsource-variable/noto-sans-kr" weight="800" style="normal"/>
+  <fonts:Face id="hand" package="@fontsource/nanum-pen-script" weight="400" style="normal"/>
+  <asset:FontStack id="st-kr" primary={kr}/>
+  <asset:FontStack id="st-heavy" primary={kr-heavy}/>
+  <asset:FontStack id="st-hand" primary={hand}><asset:Fallback font={kr}/></asset:FontStack>
+
+  <!-- 그래픽 장면(프로젝트 부품) -->
+  <promo:Scene id="g-bug" scene="bug" copy="애디렉트|Addirect" stack-order="50"
+    timeline={speech.timeline} within={wide.bounds} font={st-kr} font-heavy={st-heavy} font-hand={st-hand} during={speech.w-bug}/>
+  <promo:Scene id="g-title" scene="title" copy="모두의 TV광고|애디렉트" stack-order="40"
+    timeline={speech.timeline} within={wide.bounds} font={st-kr} font-heavy={st-heavy} font-hand={st-hand} during={speech.w-title}/>
+  <promo:Scene id="g-now" scene="now" copy="지금 보시는 이 광고" stack-order="40"
+    timeline={speech.timeline} within={wide.bounds} font={st-kr} font-heavy={st-heavy} font-hand={st-hand} during={speech.w-now}/>
+  <promo:Scene id="g-select" scene="select" copy="AI|generated" stack-order="41"
+    timeline={speech.timeline} within={wide.bounds} font={st-kr} font-heavy={st-heavy} font-hand={st-hand} during={speech.w-select}/>
+  <promo:Scene id="g-upload" scene="upload" copy="이미지 · PDF|이미지·PDF를 끌어다 놓거나 클릭해서 첨부|JPG PNG WEBP HEIC PDF 지원|딸" stack-order="15"
+    timeline={speech.timeline} within={wide.bounds} font={st-kr} font-heavy={st-heavy} font-hand={st-hand} during={speech.w-upload}
+    image-1={product} image-2={product} image-3={product} image-4={product}/>
+  <promo:Scene id="g-ttal" scene="ttal" copy="딸|깍" stack-order="40"
+    timeline={speech.timeline} within={wide.bounds} font={st-kr} font-heavy={st-heavy} font-hand={st-hand} during={speech.w-ttal}/>
+  <promo:Scene id="g-cards" scene="cards"
+    copy="컨셉 기획|광고 메시지|ONSAE로 시작하는 맑은 아침|광고 컨셉|ONSAE COLD BREW ORIGINAL|핵심 메시지|깨끗하게 내린 콜드브루의 첫 모금|톤|아침 햇살 · 크림 · 진갈색|스토리보드 작성|0–2초 · 창가 아침 햇살, 인물 뒷모습|2–4초 · 얼음 위로 흐르는 콜드브루와 병|4–6초 · 카페 테이블, 병을 앞에 둔 인물|AI 영상 생성|전문가 검수"
+    stack-order="15" timeline={speech.timeline} within={wide.bounds} font={st-kr} font-heavy={st-heavy} font-hand={st-hand} during={speech.w-cards}
+    image-1={still-1} image-2={still-2} image-3={still-3} image-4={product}/>
+  <promo:Scene id="g-promo" scene="promo" copy="영상제작기간한정|무료" stack-order="10"
+    timeline={speech.timeline} within={wide.bounds} font={st-kr} font-heavy={st-heavy} font-hand={st-hand} during={speech.w-promo}
+    image-1={still-3} image-2={still-3} image-3={still-3} image-4={still-3}/>
+  <promo:Scene id="g-end" scene="end" copy="애|디렉트|Addirect|모두의 TV광고" stack-order="20"
+    timeline={speech.timeline} within={wide.bounds} font={st-kr} font-heavy={st-heavy} font-hand={st-hand} during={speech.w-end}/>
+  <promo:Scene id="g-band" scene="band" copy="~12월까지|전국민 TV광고|무료제작|프로모션 중!|0원" stack-order="30"
+    timeline={speech.timeline} within={wide.bounds} font={st-kr} font-heavy={st-heavy} font-hand={st-hand} during={speech.w-band}/>
+
+  <caption-fine:Style id="caption-style" recipe={recipes.caption.top} font={kr-cap}/>
+  <narrative-caption:Timing id="caption-timing" document={story.caption} binding={story.caption-binding} projection={story-time}/>
+  <caption-fine:Caption id="captions" document={story.caption} timing={caption-timing}
+    timeline={speech.timeline} within={wide.bounds}>
+    <caption-fine:Use style={caption-style}/>
+  </caption-fine:Caption>
+
+  <film:Film id="main" canvas={wide.canvas} timeline={speech.timeline} appearance={recipes.film.wide}>
+    <film:Track source={picture.visual}/>
+    <film:Track source={mix.audio}/>
+    <film:Track source={g-promo.visual}/>
+    <film:Track source={g-upload.visual}/>
+    <film:Track source={g-cards.visual}/>
+    <film:Track source={g-end.visual}/>
+    <film:Track source={g-band.visual}/>
+    <film:Track source={g-title.visual}/>
+    <film:Track source={g-now.visual}/>
+    <film:Track source={g-select.visual}/>
+    <film:Track source={g-ttal.visual}/>
+    <film:Track source={g-bug.visual}/>
+    <film:Track source={captions.visual}/>
+  </film:Film>
+  <html:Video id="final" composition={main.composition} timeline={speech.timeline}/>
+</svml>

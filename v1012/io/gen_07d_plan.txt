@@ -1,0 +1,32 @@
+hypit plan .\v1012_gen.svrun
+exit=0 sec=2.5
+??Build plan is valid
+
+  Run             v1012_gen.svrun
+  Targets         final.video
+  Requests        9
+  Local requests  9
+  Preflight       ready
+
+Providers and price pages
+  @hypit/media-operations#inspect-media
+    media.local (@hypit/media-local)  쨌  local, no Provider charge
+      횞2  request summary unavailable
+  @hypit/media-operations#normalize-media
+    media.local (@hypit/media-local)  쨌  local, no Provider charge
+      횞2  2 inputs produced during Build
+  @hypit/speech-evidence#project-speech-evidence-audio
+    media.local (@hypit/media-local)  쨌  local, no Provider charge
+      횞1  1 audio reference 쨌 2 inputs produced during Build  ad-semantic:prepare-evidence-audio
+  @hypit/whisperx#whisperx-alignment
+    whisperx.local (@hypit/provider-whisperx-local), bound in the Profile  쨌  local, no Provider charge
+      횞1  language ko 쨌 1 audio reference 쨌 input produced during Build  ad-semantic:request-whisperx
+  @hypit/media-operations#render-timeline-audio
+    media.local (@hypit/media-local)  쨌  local, no Provider charge
+      횞1  input produced during Build  final:request-audio-render
+  @hypit/media-operations#mux-program-media
+    media.local (@hypit/media-local)  쨌  local, no Provider charge
+      횞1  1 audio + 1 video references 쨌 2 inputs produced during Build  final:request-mux
+  @hypit/html-program#rasterize-visual
+    html.local (@hypit/provider-html-local)  쨌  local, no Provider charge
+      횞1  input produced during Build  final:request-visual

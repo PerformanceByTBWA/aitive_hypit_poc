@@ -1,0 +1,25 @@
+hypit inspect bld_20261111T082016026Z_61FF51E113 --verbose
+exit=0 sec=1
+??Build Result
+
+  Build              bld_20261111T082016026Z_61FF51E113
+  Created            2026. 11. 11. ?ㅽ썑 5:20:16
+  Outcome            complete
+  Targets            1
+  Available Outputs  14
+
+Execution log    hypit logs bld_20261111T082016026Z_61FF51E113 --project 'D:\oss_eval\hypit\proj_serum'
+Target    final.video 쨌 @hypit/blob@1/Blob 쨌 resource 쨌 video/mp4 쨌 3320403 bytes
+Output    ad-media.domain 쨌 @hypit/temporal@1/LocalTemporalDomain 쨌 composite
+Output    ad-media.extent 쨌 @hypit/temporal@1/TemporalExtent 쨌 composite
+Output    ad-media.media 쨌 @hypit/media@1/SynchronizedMedia 쨌 composite
+Output    ad-semantic.alignment 쨌 @hypit/narrative-temporal@1/NarrativeAlignment 쨌 composite
+Output    caption-timing 쨌 @hypit/caption@1/CaptionTiming 쨌 composite
+Output    captions.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+Output    full-frame 쨌 @hypit/spatial@1/SpatialFrame 쨌 composite
+Output    main.composition 쨌 @hypit/composition@1/Composition 쨌 composite
+Output    mix.audio 쨌 @hypit/composition@1/AudioTrack 쨌 composite
+Output    picture.visual 쨌 @hypit/composition@1/VisualTrack 쨌 composite
+Output    speech.ad 쨌 @hypit/temporal@1/TemporalWindow 쨌 composite
+Output    speech.timeline 쨌 @hypit/timeline@1/Timeline 쨌 composite
+Output    story-time 쨌 @hypit/narrative-temporal@1/NarrativeProjection 쨌 composite

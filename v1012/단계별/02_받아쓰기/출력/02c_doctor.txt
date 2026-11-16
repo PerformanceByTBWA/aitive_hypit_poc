@@ -1,0 +1,13 @@
+hypit doctor
+exit=0 sec=1.6
+Hypit Doctor
+
+  Project          (프로젝트 폴더)
+  Runtime Profile  hypit.runtime.json
+  Scope            selected Runtime and project Results
+
+✓ HTML_BROWSER_SELECTION
+  Profile browser: (서버의 헤드리스 크롬)
+  Subject  html.local
+
+1 diagnostic

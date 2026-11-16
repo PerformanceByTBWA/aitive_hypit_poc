@@ -1,0 +1,5 @@
+hypit media tile references\v1012\source.mp4 --start 0 --end 3 --every 0.25 --columns 6 --cell 320 --transcript references\v1012\transcript.json --to references\v1012\evidence\hook.jpg
+exit=0 sec=3.6
+evidence\hook.jpg
+  12 labeled frames, 6×2, 320 px cells
+  0 s  0.25 s  0.5 s  0.75 s  1 s  1.25 s  1.5 s  1.75 s  2 s  2.25 s  2.5 s  2.75 s

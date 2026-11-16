@@ -1,0 +1,13 @@
+# 재현판(v1012)
+hypit runtime use .\hypit.runtime.json
+hypit runtime up --max-wait-ms 600000
+hypit check .\v1012.svrun
+hypit plan .\v1012.svrun
+입력 파일: 06_설계도작성\출력\v1012.svrun → v1012.svml + hypit.runtime.json
+
+# 교체판(v1012_gen)
+hypit runtime use .\hypit.runtime.json
+hypit runtime up --max-wait-ms 600000
+hypit check .\v1012_gen.svrun
+hypit plan .\v1012_gen.svrun
+입력 파일: 06_설계도작성\출력\v1012_gen.svrun → v1012_gen.svml + hypit.runtime.json

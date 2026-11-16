@@ -1,0 +1,7 @@
+hypit runtime down
+exit=0 sec=1.2
+??Runtime Worker is down
+
+  Worker  stopped
+
+Managed Programs are unchanged. To stop processes started by Hypit: hypit programs down --project 'D:\oss_eval\hypit\proj_serum' --runtime 'D:\oss_eval\hypit\proj_serum\hypit.runtime.json'

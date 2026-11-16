@@ -1,0 +1,6 @@
+hypit check .\v1012_gen.svrun
+exit=0 sec=2.3
+??Run source is valid
+
+  Run      v1012_gen.svrun
+  Targets  final.video

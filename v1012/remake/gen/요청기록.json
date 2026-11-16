@@ -1,0 +1,17 @@
+{
+  "경로": "Higgsfield MCP (Hypit 밖), 2026-11-16",
+  "비용": "20크레딧(이미지 2 × 2 + 영상 4 × 4), 잔액 2,490.21 → 2,470.21, 사전 조회 get_cost 값과 같음",
+  "이미지": [
+    {"파일": "ref_product.png", "작업 번호": "d053da39-5f9b-4117-9ba8-9c54e32b8343", "model": "nano_banana_pro (서비스 기록 nano_banana_2)", "aspect_ratio": "1:1", "resolution": "1k", "prompt": "..\\prompts\\img_product.txt"},
+    {"파일": "ref_person.png", "작업 번호": "2a0c1762-e613-4492-a7ea-2432a601615c", "model": "nano_banana_pro (서비스 기록 nano_banana_2)", "aspect_ratio": "3:4", "resolution": "1k", "prompt": "..\\prompts\\img_person.txt"}
+  ],
+  "영상": [
+    {"파일": "cut1_back.mp4", "작업 번호": "e67b1977-bdfa-4060-9756-67c4a7c7a1f5", "참조": ["ref_person"], "prompt": "..\\prompts\\cut1_back.txt", "비고": "첫 제출은 동시 처리 한도로 거절(과금 없음) → 다른 작업 끝난 뒤 재제출"},
+    {"파일": "cut2_product.mp4", "작업 번호": "4584cb84-31a0-4bed-9d93-9dd0bb019bdc", "참조": ["ref_product"], "prompt": "..\\prompts\\cut2_product.txt"},
+    {"파일": "cut3_table.mp4", "작업 번호": "59f57d3c-b636-4d3c-95a1-9f84aee803fd", "참조": ["ref_person", "ref_product"], "prompt": "..\\prompts\\cut3_table.txt"},
+    {"파일": "cut4_hold.mp4", "작업 번호": "004bcba3-1039-4a21-80e3-e4e330ce9fcf", "참조": ["ref_person", "ref_product"], "prompt": "..\\prompts\\cut4_hold.txt"}
+  ],
+  "영상 공통 설정": {"model": "seedance_2_0", "mode": "fast", "resolution": "480p", "duration": 4, "aspect_ratio": "16:9", "generate_audio": false, "medias role": "image_references"},
+  "영상 결과": "4개 모두 864×496 · 24fps · 4.04초 · 소리 없음",
+  "정지 화면(카드·혜택 배경용)": {"still_s1.jpg": "cut1 1.5초", "still_s2.jpg": "cut2 3.3초", "still_s3.jpg": "cut3 2.0초"}
+}

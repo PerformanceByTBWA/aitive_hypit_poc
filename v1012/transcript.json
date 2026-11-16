@@ -1,0 +1,175 @@
+{
+  "format": "hypit.transcript@1",
+  "source": "D:\\oss_eval\\hypit\\proj_serum\\references\\v1012\\source.mp4",
+  "language": "ko",
+  "audio_seconds": 15.015,
+  "passages": [
+    {
+      "text": "지금 보시는 이 광고 AI로 만들었어요.",
+      "start_seconds": 1.612,
+      "end_seconds": 4.353,
+      "words": [
+        {
+          "text": "지금",
+          "start_seconds": 1.612,
+          "end_seconds": 1.772,
+          "score": 1
+        },
+        {
+          "text": "보시는",
+          "start_seconds": 1.852,
+          "end_seconds": 2.152,
+          "score": 0.942
+        },
+        {
+          "text": "이",
+          "start_seconds": 2.252,
+          "end_seconds": 2.312,
+          "score": 1
+        },
+        {
+          "text": "광고",
+          "start_seconds": 2.412,
+          "end_seconds": 2.732,
+          "score": 0.836
+        },
+        {
+          "text": "AI로",
+          "start_seconds": 2.752,
+          "end_seconds": 3.592,
+          "score": 0.912
+        },
+        {
+          "text": "만들었어요.",
+          "start_seconds": 3.773,
+          "end_seconds": 4.353,
+          "score": 0.918
+        }
+      ]
+    },
+    {
+      "text": "이미지만 넣으면 딸깍!",
+      "start_seconds": 4.753,
+      "end_seconds": 6.574,
+      "words": [
+        {
+          "text": "이미지만",
+          "start_seconds": 4.753,
+          "end_seconds": 5.133,
+          "score": 0.832
+        },
+        {
+          "text": "넣으면",
+          "start_seconds": 5.213,
+          "end_seconds": 5.553,
+          "score": 0.929
+        },
+        {
+          "text": "딸깍!",
+          "start_seconds": 5.853,
+          "end_seconds": 6.574,
+          "score": 0.47
+        }
+      ]
+    },
+    {
+      "text": "모든 과정이 자동으로 이루어져요.",
+      "start_seconds": 7.374,
+      "end_seconds": 9.655,
+      "words": [
+        {
+          "text": "모든",
+          "start_seconds": 7.374,
+          "end_seconds": 7.814,
+          "score": 0.848
+        },
+        {
+          "text": "과정이",
+          "start_seconds": 7.914,
+          "end_seconds": 8.314,
+          "score": 0.934
+        },
+        {
+          "text": "자동으로",
+          "start_seconds": 8.494,
+          "end_seconds": 9.055,
+          "score": 0.909
+        },
+        {
+          "text": "이루어져요.",
+          "start_seconds": 9.135,
+          "end_seconds": 9.655,
+          "score": 0.607
+        }
+      ]
+    },
+    {
+      "text": "영상 제작 기간 안정 무료!",
+      "start_seconds": 10.415,
+      "end_seconds": 12.256,
+      "words": [
+        {
+          "text": "영상",
+          "start_seconds": 10.415,
+          "end_seconds": 10.735,
+          "score": 0.991
+        },
+        {
+          "text": "제작",
+          "start_seconds": 10.835,
+          "end_seconds": 11.095,
+          "score": 0.828
+        },
+        {
+          "text": "기간",
+          "start_seconds": 11.216,
+          "end_seconds": 11.436,
+          "score": 0.964
+        },
+        {
+          "text": "안정",
+          "start_seconds": 11.496,
+          "end_seconds": 11.796,
+          "score": 0.836
+        },
+        {
+          "text": "무료!",
+          "start_seconds": 11.976,
+          "end_seconds": 12.256,
+          "score": 0.912
+        }
+      ]
+    },
+    {
+      "text": "모두의 TV 광고 애드렉트!",
+      "start_seconds": 12.636,
+      "end_seconds": 14.417,
+      "words": [
+        {
+          "text": "모두의",
+          "start_seconds": 12.636,
+          "end_seconds": 12.936,
+          "score": 0.987
+        },
+        {
+          "text": "TV",
+          "start_seconds": 12.956,
+          "end_seconds": 13.256,
+          "score": 0.946
+        },
+        {
+          "text": "광고",
+          "start_seconds": 13.316,
+          "end_seconds": 13.657,
+          "score": 0.824
+        },
+        {
+          "text": "애드렉트!",
+          "start_seconds": 13.917,
+          "end_seconds": 14.417,
+          "score": 0.928
+        }
+      ]
+    }
+  ]
+}

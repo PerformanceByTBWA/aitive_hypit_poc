@@ -1,0 +1,3 @@
+hypit get bld_20261116T020541166Z_96152EFD8F --output caption-timing --to caption-timing
+exit=0 sec=1
+✓ Exported caption-timing → out\v1012_gen\caption-timing

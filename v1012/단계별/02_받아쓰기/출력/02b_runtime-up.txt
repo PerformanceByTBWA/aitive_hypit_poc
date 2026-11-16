@@ -1,0 +1,6 @@
+hypit runtime up --max-wait-ms 600000
+exit=0 sec=56.2
+  · Installing whisperx.local → Prepare the locked Python environment · log (서버 프로그램 로그)
+  · Installing whisperx.local → Prepare WhisperX large-v3 and alignment resources for en, ko · log (서버 프로그램 로그)
+  · Starting whisperx.local · log (서버 프로그램 로그)
+✓ Local Runtime ready

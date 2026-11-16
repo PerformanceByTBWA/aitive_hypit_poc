@@ -1,0 +1,5 @@
+hypit media tile references\v1012\source.mp4 --start 10 --end 15 --every 0.25 --columns 5 --cell 320 --transcript references\v1012\transcript.json --to references\v1012\evidence\endcard.jpg
+exit=0 sec=6.2
+evidence\endcard.jpg
+  20 labeled frames, 5×4, 320 px cells
+  10 s  10.25 s  10.5 s  10.75 s  11 s  11.25 s  11.5 s  11.75 s  12 s  12.25 s  12.5 s  12.75 s  13 s  13.25 s  13.5 s  13.75 s  14 s  14.25 s  14.5 s  14.75 s

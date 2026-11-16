@@ -1,0 +1,24 @@
+hypit build .\v1012.svrun --follow --max-wait-ms 1800000
+exit=0 sec=56
+✓ Build submitted
+
+  Build   bld_20261111T082016026Z_61FF51E113
+  Target  final.video
+  Work    7 requests
+
+Following accepted work. Ctrl-C stops watching; the Build continues.
+  · Working · 0/7 steps complete · 0s
+  · Working · 1/7 steps complete · 10s
+  · Working · 3/7 steps complete · 1 Transcribing and aligning words · 15s
+  · Working · 4/7 steps complete · 25s
+  · Working · 5/7 steps complete · 1 preparing resources · 30s
+  · Working · 5/7 steps complete · 1 rasterizing frames · 57/450 frames · 36s
+  · Working · 5/7 steps complete · 1 rasterizing frames · 182/450 frames · 41s
+  · Working · 5/7 steps complete · 1 rasterizing frames · 326/450 frames · 46s
+  · Working · 6/7 steps complete · 51s
+✓ Build complete
+
+  Build  bld_20261111T082016026Z_61FF51E113
+
+Inspect  hypit inspect bld_20261111T082016026Z_61FF51E113
+Export   hypit get bld_20261111T082016026Z_61FF51E113 --output final.video --to <path>

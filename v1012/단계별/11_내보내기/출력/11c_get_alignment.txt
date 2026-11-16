@@ -1,0 +1,3 @@
+hypit get bld_20261111T082016026Z_61FF51E113 --output ad-semantic.alignment --to alignment
+exit=0 sec=1
+✓ Exported ad-semantic.alignment → out\v1012\alignment

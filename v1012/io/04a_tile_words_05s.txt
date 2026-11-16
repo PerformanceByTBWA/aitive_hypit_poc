@@ -1,0 +1,5 @@
+hypit media tile references\v1012\source.mp4 --start 0 --end 15 --every 0.5 --columns 6 --transcript references\v1012\transcript.json --to references\v1012\evidence\words_05s.jpg
+exit=0 sec=8.6
+D:\oss_eval\hypit\proj_serum\references\v1012\evidence\words_05s.jpg
+  30 labeled frames, 6횞5, 480 px cells
+  0 s  0.5 s  1 s  1.5 s  2 s  2.5 s  3 s  3.5 s  4 s  4.5 s  5 s  5.5 s  6 s  6.5 s  7 s  7.5 s  8 s  8.5 s  9 s  9.5 s  10 s  10.5 s  11 s  11.5 s  12 s  12.5 s  13 s  13.5 s  14 s  14.5 s

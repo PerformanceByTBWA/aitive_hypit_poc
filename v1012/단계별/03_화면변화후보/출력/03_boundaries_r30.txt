@@ -1,0 +1,13 @@
+source.mp4
+  11 visual-change candidates at 30 samples/s; scores are not shot labels
+  1.333 s  score 0.276
+  2.967 s  score 0.306
+  4.667 s  score 0.472
+  6.333 s  score 0.3
+  7.233 s  score 0.283
+  8.433 s  score 0.101
+  10.2 s  score 0.133
+  10.233 s  score 0.198
+  12.567 s  score 0.147
+  12.6 s  score 0.19
+  12.633 s  score 0.16

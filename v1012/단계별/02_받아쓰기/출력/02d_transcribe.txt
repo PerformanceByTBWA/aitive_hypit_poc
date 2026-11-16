@@ -1,0 +1,10 @@
+hypit transcribe references\v1012\source.mp4 --language ko --to references\v1012\transcript.json
+exit=0 sec=15.7
+Transcribing through whisperx.local (@hypit/provider-whisperx-local)  ·  local, no Provider charge
+  · Checking local transcription service
+  · Transcribing and aligning words
+  · Word timing ready
+✓ Transcript written
+
+  22 words in 5 passages over 15.015s
+  transcript.json

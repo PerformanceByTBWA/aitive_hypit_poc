@@ -1,0 +1,70 @@
+<?svml using="@hypit/markup@1"?>
+
+<!-- 애디렉트 15초 원본 재현(생성 모델 없음): 원본 영상·소리를 그대로 쓰고, 내레이션 단어에 맞춘 한국어 자막만 얹음.
+     대본은 화면 글자 기준 바른 낱말(한정·애디렉트). 받아쓰기 오인식(안정·애드렉트)과 별개로 정렬이 대본 낱말에 맞춰지는지 확인. -->
+<svml>
+  <import from="@hypit/script@1"/>
+  <import as="asset" from="@hypit/media@1"/>
+  <import as="mediaop" from="@hypit/media-operations@1"/>
+  <import as="whisperx" from="@hypit/whisperx@1"/>
+  <import as="semantic" from="@hypit/narrative-temporal@1"/>
+  <import as="narrative-caption" from="@hypit/narrative-caption@1"/>
+  <import as="time" from="@hypit/timeline-author@1"/>
+  <import as="visual" from="@hypit/visual-track@1"/>
+  <import as="audio" from="@hypit/audio-track@1"/>
+  <import as="caption-fine" from="@hypit/caption-fine@1"/>
+  <import as="fonts" from="@hypit/fontsource@1"/>
+  <import as="space" from="@hypit/spatial@1"/>
+  <import as="film" from="@hypit/film@1"/>
+  <import as="html" from="@hypit/html-video@1"/>
+  <import as="recipes" source="./recipes_v1012.svs"/>
+
+  <!-- 내레이션(화면 밖 목소리). @{ttalkkak}…@{/ttalkkak} = 「딸깍」 구간, @{offer}…@{/offer} = 혜택 구간 -->
+  <script id="story">
+    <ad>
+      <NARRATOR>지금 보시는 이 광고 || AI로 만들었어요. || 이미지만 넣으면 || @{ttalkkak}딸깍!@{/ttalkkak} || 모든 과정이 || 자동으로 이루어져요. || @{offer}영상 제작 기간 한정 || 무료!@{/offer} || 모두의 TV 광고 || 애디렉트!
+    </ad>
+  </script>
+
+  <asset:Video id="ad-src" src="./references/v1012/source.mp4"/>
+
+  <space:Canvas id="wide" width="1920" height="1080"/>
+  <time:Clock id="clock" frame-rate="30"/>
+  <space:Frame id="full-frame" within={wide.bounds} left="0%" top="0%" right="100%" bottom="100%"/>
+
+  <mediaop:Normalize id="ad-media" source={ad-src}
+    video="primary-moving" audio="default" span-authority="video" clock={clock}/>
+  <whisperx:Alignment id="ad-semantic" narrative={story}
+    segment={story.segment.ad} media={ad-media.media} domain={ad-media.domain} language="ko"/>
+
+  <time:Timeline id="speech" clock={clock} end="ad.end">
+    <time:Window id="ad" from="start" for={ad-media.extent}/>
+  </time:Timeline>
+
+  <semantic:Projection id="story-time" narrative={story} timeline={speech.timeline}>
+    <semantic:Map alignment={ad-semantic.alignment} domain={ad-media.domain} window={speech.ad}/>
+  </semantic:Projection>
+
+  <visual:Track id="picture" timeline={speech.timeline}>
+    <visual:Clip id="ad-clip" media={ad-media.media} during={speech.ad} frame={full-frame} z="0" fit="cover"/>
+  </visual:Track>
+  <audio:Track id="mix" timeline={speech.timeline}>
+    <audio:Clip id="ad-audio" source={ad-media.media} during={speech.ad}/>
+  </audio:Track>
+
+  <fonts:Face id="kr-font" package="@fontsource-variable/noto-sans-kr" weight="800" style="normal"/>
+
+  <caption-fine:Style id="caption-style" recipe={recipes.caption.top} font={kr-font}/>
+  <narrative-caption:Timing id="caption-timing" document={story.caption} binding={story.caption-binding} projection={story-time}/>
+  <caption-fine:Caption id="captions" document={story.caption} timing={caption-timing}
+    timeline={speech.timeline} within={wide.bounds}>
+    <caption-fine:Use style={caption-style}/>
+  </caption-fine:Caption>
+
+  <film:Film id="main" canvas={wide.canvas} timeline={speech.timeline} appearance={recipes.film.wide}>
+    <film:Track source={picture.visual}/>
+    <film:Track source={mix.audio}/>
+    <film:Track source={captions.visual}/>
+  </film:Film>
+  <html:Video id="final" composition={main.composition} timeline={speech.timeline}/>
+</svml>

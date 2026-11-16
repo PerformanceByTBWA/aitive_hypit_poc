@@ -1,0 +1,6 @@
+hypit runtime use .\hypit.runtime.json
+exit=0 sec=1
+✓ Runtime selected
+
+  Profile  hypit.runtime.json
+  Project  (프로젝트 폴더)

@@ -1,0 +1,6 @@
+{"format":"hypit.runtime-local@1","dataRoot":".hypit/runtimes/local",
+ "credentials":{"local":{"use":"@hypit/credential-store-local"}},
+ "endpoints":{"media.local":{"use":"@hypit/media-local","config":{"defaultConcurrency":2}},
+  "html.local":{"use":"@hypit/provider-html-local","config":{"workers":4,"quality":"standard","defaultConcurrency":1,"chromePath":"(서버의 헤드리스 크롬)"}},
+  "whisperx.local":{"use":"@hypit/provider-whisperx-local","config":{"expectedModel":"large-v3","expectedDevice":"cpu","expectedCompute":"int8","alignmentLanguages":["en","ko"]}}},
+ "bindings":{"@hypit/whisperx@1#whisperx-alignment":"whisperx.local"}}

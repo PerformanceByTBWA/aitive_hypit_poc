@@ -1,0 +1,120 @@
+{
+  "format": "hypit.result-value@1",
+  "value": {
+    "documentId": "story.caption",
+    "timelineId": "speech",
+    "units": [
+      {
+        "endFrameExclusive": 54,
+        "startFrame": 48,
+        "unitId": "story.caption:unit:1"
+      },
+      {
+        "endFrameExclusive": 65,
+        "startFrame": 55,
+        "unitId": "story.caption:unit:2"
+      },
+      {
+        "endFrameExclusive": 70,
+        "startFrame": 67,
+        "unitId": "story.caption:unit:3"
+      },
+      {
+        "endFrameExclusive": 82,
+        "startFrame": 72,
+        "unitId": "story.caption:unit:4"
+      },
+      {
+        "endFrameExclusive": 108,
+        "startFrame": 82,
+        "unitId": "story.caption:unit:5"
+      },
+      {
+        "endFrameExclusive": 131,
+        "startFrame": 113,
+        "unitId": "story.caption:unit:6"
+      },
+      {
+        "endFrameExclusive": 155,
+        "startFrame": 142,
+        "unitId": "story.caption:unit:7"
+      },
+      {
+        "endFrameExclusive": 167,
+        "startFrame": 156,
+        "unitId": "story.caption:unit:8"
+      },
+      {
+        "endFrameExclusive": 198,
+        "startFrame": 175,
+        "unitId": "story.caption:unit:9"
+      },
+      {
+        "endFrameExclusive": 235,
+        "startFrame": 221,
+        "unitId": "story.caption:unit:10"
+      },
+      {
+        "endFrameExclusive": 250,
+        "startFrame": 237,
+        "unitId": "story.caption:unit:11"
+      },
+      {
+        "endFrameExclusive": 272,
+        "startFrame": 254,
+        "unitId": "story.caption:unit:12"
+      },
+      {
+        "endFrameExclusive": 290,
+        "startFrame": 274,
+        "unitId": "story.caption:unit:13"
+      },
+      {
+        "endFrameExclusive": 323,
+        "startFrame": 312,
+        "unitId": "story.caption:unit:14"
+      },
+      {
+        "endFrameExclusive": 333,
+        "startFrame": 325,
+        "unitId": "story.caption:unit:15"
+      },
+      {
+        "endFrameExclusive": 344,
+        "startFrame": 336,
+        "unitId": "story.caption:unit:16"
+      },
+      {
+        "endFrameExclusive": 354,
+        "startFrame": 344,
+        "unitId": "story.caption:unit:17"
+      },
+      {
+        "endFrameExclusive": 368,
+        "startFrame": 359,
+        "unitId": "story.caption:unit:18"
+      },
+      {
+        "endFrameExclusive": 389,
+        "startFrame": 379,
+        "unitId": "story.caption:unit:19"
+      },
+      {
+        "endFrameExclusive": 398,
+        "startFrame": 388,
+        "unitId": "story.caption:unit:20"
+      },
+      {
+        "endFrameExclusive": 410,
+        "startFrame": 399,
+        "unitId": "story.caption:unit:21"
+      },
+      {
+        "endFrameExclusive": 433,
+        "startFrame": 417,
+        "unitId": "story.caption:unit:22"
+      }
+    ]
+  },
+  "resources": []
+}

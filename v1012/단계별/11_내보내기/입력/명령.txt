@@ -1,0 +1,13 @@
+# 재현판(v1012)
+hypit get bld_20261111T082016026Z_61FF51E113 --output final.video --to v1012_replica.mp4
+hypit inspect bld_20261111T082016026Z_61FF51E113 --verbose
+hypit get bld_20261111T082016026Z_61FF51E113 --output ad-semantic.alignment --to alignment
+hypit runtime down
+hypit programs down
+
+# 교체판(v1012_gen)
+hypit get bld_20261116T020541166Z_96152EFD8F --output final.video --to v1012_gen.mp4
+hypit inspect bld_20261116T020541166Z_96152EFD8F --verbose
+hypit get bld_20261116T020541166Z_96152EFD8F --output caption-timing --to caption-timing
+hypit runtime down
+hypit programs down

@@ -1,0 +1,23 @@
+hypit build .\remake.svrun --follow --max-wait-ms 1800000
+exit=0 sec=55.7
+??Build submitted
+
+  Build   bld_20261116T025619221Z_623AF3E4AA
+  Target  final.video
+  Work    15 requests
+
+Following accepted work. Ctrl-C stops watching; the Build continues.
+  쨌 Working 쨌 0/15 steps complete 쨌 0s
+  쨌 Working 쨌 5/15 steps complete 쨌 5s
+  쨌 Working 쨌 11/15 steps complete 쨌 1 Transcribing and aligning words 쨌 11s
+  쨌 Working 쨌 12/15 steps complete 쨌 23s
+  쨌 Working 쨌 12/15 steps complete 쨌 1 preparing resources 쨌 34s
+  쨌 Working 쨌 13/15 steps complete 쨌 1 rasterizing frames 쨌 118/450 frames 쨌 39s
+  쨌 Working 쨌 13/15 steps complete 쨌 1 rasterizing frames 쨌 326/450 frames 쨌 45s
+  쨌 Working 쨌 14/15 steps complete 쨌 50s
+??Build complete
+
+  Build  bld_20261116T025619221Z_623AF3E4AA
+
+Inspect  hypit inspect bld_20261116T025619221Z_623AF3E4AA --project 'D:\oss_eval\hypit\proj_serum'
+Export   hypit get bld_20261116T025619221Z_623AF3E4AA --output final.video --project 'D:\oss_eval\hypit\proj_serum' --to <path>

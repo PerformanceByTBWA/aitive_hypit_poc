@@ -1,0 +1,4 @@
+02_받아쓰기\출력\transcript.json
+03_화면변화후보\출력\03_boundaries_r30.json · 후보판정.md
+04_프레임격자\출력\evidence\ 중 에이전트가 실제로 연 그림 11장: whole_1s · words_05s · hook · cuts\001·002·003·007·008 · ttalkkak · process · endcard
+음량측정_hypit밖.txt (보조)

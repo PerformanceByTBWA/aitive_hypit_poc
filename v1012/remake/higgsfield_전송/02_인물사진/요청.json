@@ -1,0 +1,18 @@
+{
+  "도구": "generate_image",
+  "작업 번호": "2a0c1762-e613-4492-a7ea-2432a601615c",
+  "비용(크레딧)": 2,
+  "params": {
+    "model(요청)": "nano_banana_pro",
+    "model(서비스 기록)": "nano_banana_2",
+    "aspect_ratio": "3:4",
+    "resolution": "1k",
+    "width": 896,
+    "height": 1200,
+    "input_images": [],
+    "batch_size": 1
+  },
+  "medias": [],
+  "prompt": "prompt.txt",
+  "context(분석용 칸)": "가상 음료 광고 시험용 가상 인물 참조 사진"
+}

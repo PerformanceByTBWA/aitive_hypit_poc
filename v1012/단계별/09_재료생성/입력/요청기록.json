@@ -1,0 +1,40 @@
+{
+  "경로": "Higgsfield MCP generate_video (Hypit 밖, 11/14)",
+  "작업 번호": "02d27faf-a6d9-4c46-aeca-0172170935b3",
+  "model": "seedance_2_0_fast (요청 model=seedance_2_0 · mode=fast)",
+  "aspect_ratio": "16:9",
+  "duration": 15,
+  "resolution": "480p",
+  "width": 854,
+  "height": 480,
+  "generate_audio": false,
+  "multi_shots": false,
+  "genre": "auto",
+  "speedramp": "auto",
+  "bitrate_mode": "standard",
+  "prompt_language(서비스 기록값)": "en",
+  "medias": [
+    {
+      "role": "image",
+      "media_id": "e91c033a-308c-456e-ae54-c352446786b1",
+      "파일": "참조그림\\ref1_hair.jpg (원본 0.00초)"
+    },
+    {
+      "role": "image",
+      "media_id": "d04417cb-85b0-4166-8c43-4213ca03f6db",
+      "파일": "참조그림\\ref2_product.jpg (원본 1.34초)"
+    },
+    {
+      "role": "image",
+      "media_id": "b8a90f88-7271-4bc0-93e1-b940f1a2c771",
+      "파일": "참조그림\\ref3_table.jpg (원본 3.05초)"
+    },
+    {
+      "role": "image",
+      "media_id": "92f22b59-4829-4a5d-a2c4-bdbb192052aa",
+      "파일": "참조그림\\ref4_bottle.jpg (원본 6.90초)"
+    }
+  ],
+  "prompt": "입력\\prompt.txt 와 같음",
+  "비고": "Higgsfield 작업 기록(job_display)에서 옮김, 파일 주소(계정 경로 포함)는 뺌"
+}

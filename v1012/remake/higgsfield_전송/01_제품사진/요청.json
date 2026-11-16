@@ -1,0 +1,18 @@
+{
+  "도구": "generate_image",
+  "작업 번호": "d053da39-5f9b-4117-9ba8-9c54e32b8343",
+  "비용(크레딧)": 2,
+  "params": {
+    "model(요청)": "nano_banana_pro",
+    "model(서비스 기록)": "nano_banana_2",
+    "aspect_ratio": "1:1",
+    "resolution": "1k",
+    "width": 1024,
+    "height": 1024,
+    "input_images": [],
+    "batch_size": 1
+  },
+  "medias": [],
+  "prompt": "prompt.txt",
+  "context(분석용 칸)": "가상 음료 제품 광고 시험용 제품 참조 사진"
+}
